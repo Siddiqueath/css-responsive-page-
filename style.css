@@ -1,0 +1,96 @@
+body {
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    background-color: pink;
+}
+
+/*  minimum width of 650px and bigger  */
+@media (min-width: 550px) and (orientation: landscape) {
+    body {
+        background-color: rgb(185, 219, 245);
+    }
+}
+
+
+/*  minimum width of 400px and upto 649px  
+@media (min-width: 400px) and (max-width: 649px) {
+    body {
+        background-color: purple;
+    }
+} */
+
+/*Typography*/
+
+h1 {
+    font-size: 3rem;
+    color: #312614;
+    text-align: center;
+}
+
+h1 span {
+    color: #b7832F;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Layout */
+
+img {
+    max-width: 100%;
+}
+
+/* @media (min-width: 1010px) {
+    img {
+        width: 980px;
+    }
+} */
+
+.container {
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+    }
+}
+
+
+.col-bg {
+    background-color: #212614;
+    color: #fff;
+    padding: .5em;
+}
